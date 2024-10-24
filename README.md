@@ -3,8 +3,12 @@
 The purpose is to lookup IPv4 address of DDNS hostname while append to iptables chain.
 Run the script on CentOS or with minor changes on any Linux, may change line 2 for appropriate path to iptables i.e. debian /etc/default.
 
-The `host` command use a part of the BIND utilities so you need to install them. To install the BIND utilities, type the following:
+The `host` command use a part of the BIND utilities so you need to install them, install BIND utilities with type the command:
 `yum -y install bind-utils`
+
+On Debian and any of its derivatives, the installation is done using the apt command.
+
+`apt install dnsutils`
 
 A line contains with your DDNS hostname tagged with `#MyDDNS` must be entered into the `iptables` configuration file:
 
